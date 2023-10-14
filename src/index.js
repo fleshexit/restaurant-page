@@ -1,1 +1,1 @@
-confirm.log("test")
+console.log("test")
