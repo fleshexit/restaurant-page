@@ -1,4 +1,6 @@
-function buildFoundations() {
+
+
+export function buildFoundations() {
     // render content
     const content = document.getElementById('content');
 
@@ -13,6 +15,7 @@ function buildFoundations() {
     items.forEach(item => {
         const li = document.createElement('li');
         li.textContent = item;
+        li.id = item.toLowerCase();
         ul.appendChild(li);
     }); 
     header.appendChild(ul);
@@ -24,12 +27,11 @@ function buildFoundations() {
     // create footer
     const footer = document.createElement('footer');
     footer.classList.add('footer');
-    footer.textContent = "chrlie-w";
+    footer.innerHTML = 'Image by <a href="https://www.freepik.com/free-photo/chinese-new-year-concept-with-copy-space_11238752.htm#query=Chinese%20Restaurant&position=2&from_view=search&track=ais"> Freepik</a>';
+    
 
     // Append in the correct order: header, main, footer
     content.appendChild(header);
     content.appendChild(main);
     content.appendChild(footer);
 }
-
-export { buildFoundations };

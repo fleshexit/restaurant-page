@@ -4,8 +4,6 @@ import { buildHome } from "./home";
 import { buildMenu } from "./menu";
 import { buildAbout } from "./about";
 
-
-
 function clearContent(){
     const content = document.getElementById('content');
     while (content.firstChild) content.removeChild(content.firstChild);
@@ -29,11 +27,13 @@ function about(){
     buildAbout();
 }
 
+// initial load
 buildFoundations();
 buildHome();
 
-document.addEventListener('click', (e) => {
-    if (e.target.textContent === 'Home') home();
-    if (e.target.textContent === 'Menu' || 'View Menu') menu();
-    if (e.target.textContent === 'About') about();
+document.addEventListener("click", (e) => {
+    const target = e.target.innerText;
+    if (target === "Home") home();
+    if (target === "Menu" || target === "View Menu") menu();
+    if (target === "About") about();
 });
