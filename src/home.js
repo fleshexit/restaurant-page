@@ -19,6 +19,8 @@ function build(){
 
     content.appendChild(main);
     main.appendChild(hero);
+    hero.appendChild(h1);
+    hero.appendChild(p);
 
 }
 

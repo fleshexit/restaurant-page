@@ -1,6 +1,4 @@
-
-function buildFoundations(){
-
+function buildFoundations() {
     // render content
     const content = document.getElementById('content');
 
@@ -9,26 +7,29 @@ function buildFoundations(){
     header.classList.add('header');
 
     // populate header
-    const items = ["Home", "Menu", "About",];
+    const items = ["Home", "Menu", "About"];
     const ul = document.createElement('ul');
+    ul.classList.add('nav-list');
     items.forEach(item => {
         const li = document.createElement('li');
         li.textContent = item;
         ul.appendChild(li);
     }); 
     header.appendChild(ul);
-    content.appendChild(header);
 
+    // create main
     const main = document.createElement('main');
     main.classList.add('main');
-    content.appendChild(main);
 
     // create footer
     const footer = document.createElement('footer');
     footer.classList.add('footer');
     footer.textContent = "chrlie-w";
+
+    // Append in the correct order: header, main, footer
+    content.appendChild(header);
+    content.appendChild(main);
     content.appendChild(footer);
-    
 }
 
-export { buildFoundations }
+export { buildFoundations };

@@ -24,11 +24,13 @@ body {
 
 .header {
     border-bottom: 1px solid #ccc;
+    order: 1;
 }
 
 
 .footer {
     border-top: 1px solid #ccc;
+    order: 3;
 }
 
 a {
@@ -52,6 +54,7 @@ a {
 
 .main {
     flex: 1;
+    order: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
