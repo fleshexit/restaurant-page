@@ -8,16 +8,18 @@ function createElementWithClass(elementType, className) {
   
 function createMenuItem(title, description, price) {
     const menuCard = createElementWithClass('div', 'menu-card');
-    const dishTitle = createElementWithClass('h2', 'dish-title');
-    const dishDesc = createElementWithClass('p', 'dish-desc');
+    const cardTextContainer = createElementWithClass('div', 'card-text');
+    const dishTitle = createElementWithClass('h2', 'card-text');
+    const dishDesc = createElementWithClass('p', 'card-text');
     const dishPrice = createElementWithClass('p', 'dish-price');
 
     dishTitle.textContent = title;
     dishDesc.textContent = description;
     dishPrice.textContent = price;
 
-    menuCard.appendChild(dishTitle);
-    menuCard.appendChild(dishDesc);
+    cardTextContainer.appendChild(dishTitle);
+    cardTextContainer.appendChild(dishDesc);
+    menuCard.appendChild(cardTextContainer);
     menuCard.appendChild(dishPrice);
 
     return menuCard;

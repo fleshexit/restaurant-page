@@ -56,8 +56,12 @@ a {
 .nav-list li {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: white;
     cursor: pointer;
+}
+
+.nav-list li:hover {
+    color: var(--text-color);
 }
 
 #content {
@@ -111,6 +115,7 @@ a {
 .hero p {
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
+    color: #AAAAAA;
 }
 
 .button {
@@ -124,3 +129,89 @@ a {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+}
+
+.title-container p {
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--accent-color);
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.card-text p {
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #AAAAAA;
+}   
+
+.menu-card .dish-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    width: 40%;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+.about-heading {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-text {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+}
+  
