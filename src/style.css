@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@300;500;700&display=swap");
 
 :root {
-    --background-color: #f5f5f5;
-    --accent-color: #AD0001;
-    --dark-background: #161515;
-    --mid-background: #2F2F2F;
-    --light-background: #4F4F4F;
-    --text-color: #BD9F63;
+    --title-color: #BD9F63;
+    --subtitle-color: #AD0001;
+    --text-color: #AAAAAA;
 }
 
 * {
@@ -16,13 +13,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
 }
 
 a {
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 .header, .footer {
@@ -34,7 +30,7 @@ a {
 }
 
 .header {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--subtitle-color);
     order: 1;
     z-index: 2;
 }
@@ -61,7 +57,7 @@ a {
 }
 
 .nav-list li:hover {
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 #content {
@@ -103,7 +99,7 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 .hero h1 {
@@ -115,15 +111,15 @@ a {
 .hero p {
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: #AAAAAA;
+    color: var(--text-color);
 }
 
 .button {
     padding: 0.5rem 1rem;
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--subtitle-color);
     border-radius: 5px;
     background-color: transparent;
-    color: var(--accent-color);
+    color: var(--subtitle-color);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -151,13 +147,13 @@ a {
     font-size: 5rem;
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 .title-container p {
     font-size: 4rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: var(--accent-color);
+    color: var(--subtitle-color);
 }
 
 .menu-container {
@@ -188,7 +184,7 @@ a {
 .card-text p {
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: #AAAAAA;
+    color: var(--text-color);
 }   
 
 .menu-card .dish-price {
@@ -198,19 +194,24 @@ a {
 }
 
 .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 40%;
     padding: 2rem;
     text-align: center;
   }
   
 .about-heading {
-    font-size: 1.5rem;
-    color: var(--accent-color);
+    font-size: 4rem;
+    color: var(--subtitle-color);
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     line-height: 1.5;
 }
